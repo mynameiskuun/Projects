@@ -1,0 +1,20 @@
+create table courseList (
+coursekey int auto_increment primary key,
+courseNum int,
+courseName varchar(20),
+instructor varchar(20),
+fixedNum int,
+period varchar(30),
+courseInfo  varchar(50))
+
+insert into courseList(courseNum, courseName, instructor, fixedNum, period, courseInfo)
+values ('100001', '자바', '홍길동', '30', '2022-12-27 ~2023-07-04 ', '자바(JAVA) 응용 SW개발자 취업과정'),
+('100002', 'AI', '홍길순', '30', '2022-12-30 ~2023-06-22', 'AI와 RPA기반 웹서비스 자동화 개발 과정'),
+('100003', '빅데이터', '홍길철', '30', '2023-01-02 ~2023-07-10', '빅데이터를 활용한 웹 시각화 양성과정'),
+('100004', '파이썬', '홍길장', '20', '2023-01-04 ~2023-06-30 ', '데이터 분석&엔지니어 취업캠프(Python)')
+;
+
+SELECT * FROM joongangcourse.courselist;
+
+
+
